@@ -1,12 +1,12 @@
 package com.baar.springbootcrud.dto;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
-@RequiredArgsConstructor
-@Getter
-@Setter
-@ToString
+@AllArgsConstructor
+@NoArgsConstructor
 public class PersonDto {
     private Integer id;
     private String firstName;

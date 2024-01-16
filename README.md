@@ -1,2 +1,3 @@
 # spring-boot-crud
-Spring boot  with MySQL CRUD application.
+
+Spring boot with MySQL CRUD application.

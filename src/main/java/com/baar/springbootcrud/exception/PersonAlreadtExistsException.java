@@ -5,7 +5,7 @@ public class PersonAlreadtExistsException extends Exception {
         super(message, cause);
     }
 
-    public PersonAlreadtExistsException(String message ) {
+    public PersonAlreadtExistsException(String message) {
         super(message);
     }
 }

@@ -26,7 +26,7 @@ public class PersonApi {
 
     @ApiResponse(description = "Saves person information in the database")
     @PostMapping(value = "/save/person", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Person> savePerson(@RequestBody(required = true) PersonDto personDto) throws PersonAlreadtExistsException {
+    public ResponseEntity<Person> savePerson(@RequestBody PersonDto personDto) throws PersonAlreadtExistsException {
         Person savedPerson = personService.savePerson(personDto);
         return new ResponseEntity<>(savedPerson, HttpStatus.OK);
     }
